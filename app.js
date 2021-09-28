@@ -23,6 +23,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended : true }))
 
 app.use("/boats", routes.boats)
+app.use("/crew", routes.crew)
 
 
 app.get('/', (req, res) => {

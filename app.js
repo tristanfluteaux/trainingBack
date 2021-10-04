@@ -24,6 +24,8 @@ app.use(express.urlencoded({ extended : true }))
 
 app.use("/boats", routes.boats)
 app.use("/crew", routes.crew)
+app.use("/harbor", routes.harbor)
+app.use("/monsters", routes.monsters)
 
 
 app.get('/', (req, res) => {
